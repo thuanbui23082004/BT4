@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Spotify - Web Play</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+        <!-- GG font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- Font awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <i
+                    class="fa-brands fa-spotify nav__logo"
+                    style="color: #fafafa"
+                ></i>
+                <div class="navbar_center">
+                    <div class="nav__btn">
+                        <i
+                            class="fa-solid fa-house nav__home btn"
+                            style="color: #cfcfcf"
+                        ></i>
+                    </div>
+
+                    <form action="">
+                        <i
+                            class="fa-solid fa-magnifying-glass nav__find"
+                            style="color: #cfcfcf"
+                        >
+                        </i>
+                        <input
+                            type="text"
+                            placeholder="Bạn muốn phát nội dung gì"
+                            class="nav__input"
+                        />
+                        <i
+                            class="fa-solid fa-filter nav_loc"
+                            style="color: #cfcfcf"
+                        >
+                        </i>
+                    </form>
+                </div>
+                <div class="navbar__right">
+                    <div class="navbar__btn">
+                        <i
+                            class="fa-solid fa-arrow-down navbar__btn--icon"
+                            style="color: #ffffff"
+                        ></i>
+                        <div class="navbar__btn--name">Install App</div>
+                    </div>
+                    <i
+                        class="fa-solid fa-bell nav__bell"
+                        style="color: #ffffff"
+                    ></i>
+                    <img
+                        src="./assets/img/nav_avatar.jpg"
+                        alt=""
+                        class="nav__avatar hover"
+                    />
+                </div>
+            </div>
+            <div class="content">
+                <div class="sidebar">
+                    <div class="sidebar__header">
+                        <div class="sidebar__tiltemain">
+                            <i
+                                class="fa-solid fa-bookmark sidebar__icon hover"
+                                style="color: #cfcfcf"
+                            ></i>
+                            <div class="sidebar__title hover">Your Library</div>
+                        </div>
+
+                        <div class="sidebar__act">
+                            <i
+                                class="fa-solid fa-plus sidebar__act1 hover"
+                                style="color: #9e9e9e"
+                            >
+                            </i>
+                            <i
+                                class="fa-solid fa-arrow-right sidebar__act2 hover"
+                                style="color: #d6d6d6"
+                            >
+                            </i>
+                        </div>
+                    </div>
+                    <div class="sidebar__type">
+                        <i class="fa-solid fa-xmark" style="color: #d7d8db"></i>
+                        <div class="sidebar__type--name">Playlist</div>
+                        <div class="sidebar__type--name">By you</div>
+                    </div>
+                    <div class="sidebar__find">
+                        <i
+                            class="fa-solid fa-magnifying-glass"
+                            style="color: #cfcfcf"
+                        ></i>
+                        <div class="sidebar__find--sort">
+                            <div class="side__find--name">Recent</div>
+                            <i
+                                class="fa-solid fa-list-ul"
+                                style="color: #909090"
+                            ></i>
+                        </div>
+                    </div>
+                    <div class="sidebar__list">
+                        <div class="sidebar__item">
+                            <img
+                                src="./assets/img/sidebar__item.jpg"
+                                alt=""
+                                class="item--img"
+                            />
+                            <div class="item--info">
+                                <div class="item--info--name">Trống Cơm</div>
+                                <div class="item--info--type">ATVNCN 2024</div>
+                                <i class="fa-solid fa-play sidebar__play" style="color: #ffffff;display: flex;"></i>
+                            </div>
+                        </div>
+                        <div class="sidebar__item">
+                            <img
+                                src="./assets/img/sidebar__item.jpg"
+                                alt=""
+                                class="item--img"
+                            />
+                            <div class="item--info">
+                                <div class="item--info--name">Lặng</div>
+                                <div class="item--info--type">ATVNCN 2024</div>
+                                <i class="fa-solid fa-play sidebar__play" style="color: #ffffff;display: flex;"></i>
+                            </div>
+                        </div>
+                        <div class="sidebar__item">
+                            <img
+                                src="./assets/img/sidebar__item.jpg"
+                                alt=""
+                                class="item--img"
+                            />
+                            <div class="item--info">
+                                <div class="item--info--name">
+                                    Tỉnh thức sau giấc ngủ đông
+                                </div>
+                                <div class="item--info--type">ATVNCN 2024</div>
+                                <i class="fa-solid fa-play sidebar__play" style="color: #ffffff;display: flex;"></i>
+                            </div>
+                        </div>
+                        <div class="sidebar__item">
+                            <img
+                                src="./assets/img/sidebar__item.jpg"
+                                alt=""
+                                class="item--img"
+                            />
+                            <div class="item--info">
+                                <div class="item--info--name">
+                                    Lột xác X Chuyện nhỏ
+                                </div>
+                                <div class="item--info--type">ATVNCN 2024</div>
+                                <i class="fa-solid fa-play sidebar__play" style="color: #ffffff;display: flex;"></i>
+                            </div>
+                        </div>
+                        <div class="sidebar__item">
+                            <img
+                                src="./assets/img/sidebar__item.jpg"
+                                alt=""
+                                class="item--img"
+                            />
+                            <div class="item--info">
+                                <div class="item--info--name">
+                                    Một Lần Dang Dở X Đi qua cầu vồng
+                                </div>
+                                <div class="item--info--type">ATVNCN 2024</div>
+                                <i class="fa-solid fa-play sidebar__play" style="color: #ffffff;display: flex;"></i>
+                            </div>
+                        </div>
+                        <div class="sidebar__item">
+                            <img
+                                src="./assets/img/sidebar__item.jpg"
+                                alt=""
+                                class="item--img"
+                            />
+                            <div class="item--info">
+                                <div class="item--info--name">
+                                    Vợ người ta X Chuyện ba người
+                                </div>
+                                <div class="item--info--type">ATVNCN 2024</div>
+                                <i class="fa-solid fa-play sidebar__play" style="color: #ffffff;display: flex;"></i>
+                            </div>
+                        </div>
+                        <div class="sidebar__item">
+                            <img
+                                src="./assets/img/sidebar__item.jpg"
+                                alt=""
+                                class="item--img"
+                            />
+                            <div class="item--info">
+                                <div class="item--info--name">
+                                    Lột xác X Chuyện nhỏ
+                                </div>
+                                <div class="item--info--type">ATVNCN 2024</div>
+                                <i class="fa-solid fa-play sidebar__play" style="color: #ffffff;display: flex;"></i>
+                            </div>
+                        </div>
+                        <div class="sidebar__item">
+                            <img
+                                src="./assets/img/sidebar__item.jpg"
+                                alt=""
+                                class="item--img"
+                            />
+                            <div class="item--info">
+                                <div class="item--info--name">Trống Cơm</div>
+                                <div class="item--info--type">ATVNCN 2024</div>
+                                <i class="fa-solid fa-play sidebar__play" style="color: #ffffff;display: flex;"></i>
+                            </div>
+                        </div>
+                        <div class="sidebar__item">
+                            <img
+                                src="./assets/img/sidebar__item.jpg"
+                                alt=""
+                                class="item--img"
+                            />
+                            <div class="item--info">
+                                <div class="item--info--name">Lặng</div>
+                                <div class="item--info--type">ATVNCN 2024</div>
+                                <i class="fa-solid fa-play sidebar__play" style="color: #ffffff;display: flex;"></i>
+                            </div>
+                        </div>
+                        <div class="sidebar__item">
+                            <img
+                                src="./assets/img/sidebar__item.jpg"
+                                alt=""
+                                class="item--img"
+                            />
+                            <div class="item--info">
+                                <div class="item--info--name">
+                                    Tỉnh thức sau giấc ngủ đông
+                                </div>
+                                <div class="item--info--type">ATVNCN 2024</div>
+                                <i class="fa-solid fa-play sidebar__play" style="color: #ffffff;display: flex;"></i>
+                            </div>
+                        </div>
+                        <div class="sidebar__item">
+                            <img
+                                src="./assets/img/sidebar__item.jpg"
+                                alt=""
+                                class="item--img"
+                            />
+                            <div class="item--info">
+                                <div class="item--info--name">
+                                    Lột xác X Chuyện nhỏ
+                                </div>
+                                <div class="item--info--type">ATVNCN 2024</div>
+                                <i class="fa-solid fa-play sidebar__play" style="color: #ffffff;display: flex;"></i>
+                            </div>
+                        </div>
+                        <div class="sidebar__item">
+                            <img
+                                src="./assets/img/sidebar__item.jpg"
+                                alt=""
+                                class="item--img"
+                            />
+                            <div class="item--info">
+                                <div class="item--info--name">
+                                    Vợ người ta X Chuyện ba người
+                                </div>
+                                <div class="item--info--type">ATVNCN 2024</div>
+                                <i class="fa-solid fa-play sidebar__play" style="color: #ffffff;display: flex;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__main">
+                    <div class="main__typelist">
+                        <div class="main__type--item hover">Tất cả</div>
+                        <div class="main__type--item hover">Nhạc</div>
+                        <div class="main__type--item hover">Podcast</div>
+                    </div>
+                    <div class="main__listmusic">
+                        <div class="main__listmusic--item hover">
+                            <img src="./assets/img/listmusic__item1.jpg" alt="" class="listmusic__item--ava">
+                            <div class="list__music--title">
+                                Cà Phê Quán Quen
+                            </div>
+                            <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                        </div>
+                        <div class="main__listmusic--item hover">
+                            <img src="./assets/img/listmusic__item2.jpg" alt="" class="listmusic__item--ava">
+                            <div class="list__music--title">
+                                Hoàng Dũng
+                            </div>
+                            <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                        </div>
+                        <div class="main__listmusic--item hover">
+                            <img src="./assets/img/listmusic__item3.jpg" alt="" class="listmusic__item--ava">
+                            <div class="list__music--title">
+                                Low G
+                            </div>
+                            <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                        </div>
+                        <div class="main__listmusic--item hover">
+                            <img src="./assets/img/listmusic__item4.jpg" alt="" class="listmusic__item--ava">
+                            <div class="list__music--title">
+                                THE WXRDIES
+                            </div>
+                            <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                        </div>
+                        <div class="main__listmusic--item hover">
+                            <img src="./assets/img/listmusic__item5.jpg" alt="" class="listmusic__item--ava">
+                            <div class="list__music--title">
+                                Thiên Hạ Nghe Gì
+                            </div>
+                            <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                        </div>
+                        <div class="main__listmusic--item hover">
+                            <img src="./assets/img/listmusic__item6.jpg" alt="" class="listmusic__item--ava">
+                            <div class="list__music--title">
+                                Dangrangto Radio
+                            </div>
+                            <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                        </div>
+                    </div>
+                    <div class="main__row">
+                        <div class="main__row--head">
+                            <h3 ><a href="#!"class="row__head--title">Dành Cho Thuanbuivan</a></h3>
+                            <div class="row__head--act">Hiện Tất Cả</div>
+                        </div>
+                        
+                        <div class="row--list"> 
+                            <i class="fa-solid fa-arrow-right main__row--arrow" style="color: #ffffff;"></i>
+                            <div class="row__item hover">
+                                <img src="./assets/img/main__row--ava1.jpg" class="row__item--avatar"></img>
+                                <div class="row__item--info">Sơn Tùng MTP, ANH TRAI VƯỢT NGÀN CHÔNG GAI,ANDIE...</div>
+                               <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                            </div>
+                            <div class="row__item hover">
+                                <img src="./assets/img/main__row--ava2.jpg" class="row__item--avatar"></img>
+                                <div class="row__item--info">Taylor Swift, Ariana Grande, Doja Cat và nhiều hơn nữa</div>
+                                <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                            </div>
+                            <div class="row__item hover">
+                                <img src="./assets/img/main__row--ava3.jpg" class="row__item--avatar"></img>
+                                <div class="row__item--info">Tuyển tập nhạc mới hằng tuần. Thưởng thức ca khúc mới và ít người nghe dành cho bạn. Cập nhật mỗi thứ Hai.</div>
+                              <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                            </div>
+                            <div class="row__item hover">
+                                <img src="./assets/img/main__row--ava4.jpg" class="row__item--avatar"></img>
+                                <div class="row__item--info">Tuyển tập nhạc mới hằng tuần. Thưởng thức ca khúc mới và ít người nghe dành cho bạn. Cập nhật mỗi thứ Hai.</div>
+                              <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                            </div>
+                            <div class="row__item hover">
+                                <img src="./assets/img/main__row--ava5.jpg" class="row__item--avatar"></img>
+                                <div class="row__item--info">Chị Đẹp Đạp Gió Rẽ Sóng, ANH TRAI "SAY HI", Vũ Cát Tường và nhiều hơn nữa</div>
+                                 <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                            </div>
+                            <div class="row__item hover">
+                                <img src="./assets/img/main__row--ava6.jpg" class="row__item--avatar"></img>
+                                <div class="row__item--info">Noo Phước Thịnh, Bích Phương, Charmy Pham và nhiều hơn nữa</div>
+                           <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                            </div>
+                            <div class="row__item hover">
+                                <img src="./assets/img/main__row--ava3.jpg" class="row__item--avatar"></img>
+                                <div class="row__item--info">Tuyển tập nhạc mới hằng tuần. Thưởng thức ca khúc mới và ít người nghe dành cho bạn. Cập nhật mỗi thứ Hai.</div>
+                           <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                            </div>
+                            <div class="row__item hover">
+                                <img src="./assets/img/main__row--ava1.jpg" class="row__item--avatar"></img>
+                                <div class="row__item--info">Chị Đẹp Đạp Gió Rẽ Sóng, ANH TRAI "SAY HI", Vũ Cát Tường và nhiều hơn nữa</div>
+                            <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                            </div>
+                            <div class="row__item hover">
+                                <img src="./assets/img/main__row--ava2.jpg" class="row__item--avatar"></img>
+                                <div class="row__item--info">Noo Phước Thịnh, Bích Phương, Charmy Pham và nhiều hơn nữa</div>
+                                <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="main__row3">
+                        <div class="main__row--head">
+                            <h3 ><a href="#!"class="row__head--title">Nghệ sĩ phổ biến</a></h3>
+                            <div class="row__head--act">Hiện Tất Cả</div>
+                        </div>
+                        
+                        <div class="row--list"> 
+                            <i class="fa-solid fa-arrow-right main__row--arrow" style="color: #ffffff;"></i>
+                            <div class="row__item hover">
+                                <img src="./assets/img/singer2.jpg" class="row__item--avatar"></img>
+                                <div class="row__item--info">SOOBIN HOÀNG SƠN</div>
+                               <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                            </div>
+                            <div class="row__item hover">
+                                <img src="./assets/img/singer3.jpg" class="row__item--avatar"></img>
+                                <div class="row__item--info">BÙI TRƯỜNG LINH</div>
+                                <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                            </div>
+                            <div class="row__item hover">
+                                <img src="./assets/img/singer4.jpg" class="row__item--avatar"></img>
+                                <div class="row__item--info">VŨ</div>
+                              <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                            </div>
+                            <div class="row__item hover">
+                                <img src="./assets/img/singer5.jpg" class="row__item--avatar"></img>
+                                <div class="row__item--info">DƯƠNG DOMIC</div>
+                              <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                            </div>
+                            <div class="row__item hover">
+                                <img src="./assets/img/listmusic__item3.jpg" class="row__item--avatar"></img>
+                                <div class="row__item--info">LOW G</div>
+                                 <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                            </div>
+                            <div class="row__item hover">
+                                <img src="./assets/img/listmusic__item2.jpg" class="row__item--avatar"></img>
+                                <div class="row__item--info">HOÀNG DŨNG</div>
+                           <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="main__row2">
+                        <div class="main__row--head">
+                            <h3 ><a href="#!"class="row__head--title">Tuyển tập hàng đầu của bạn</a></h3>
+                            <div class="row__head--act">Hiện Tất Cả</div>
+                        </div>
+                        
+                        <div class="row--list"> 
+                            <i class="fa-solid fa-arrow-right main__row--arrow" style="color: #ffffff;"></i>
+                            <div class="row__item hover">
+                                <img src="./assets/img/listmusic__item5.jpg" class="row__item--avatar"></img>
+                                <div class="row__item--info">Sơn Tùng MTP, ANH TRAI VƯỢT NGÀN CHÔNG GAI,ANDIE...</div>
+                               <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                            </div>
+                            <div class="row__item hover">
+                                <img src="./assets/img/listmusic__item2.jpg" class="row__item--avatar"></img>
+                                <div class="row__item--info">Taylor Swift, Ariana Grande, Doja Cat và nhiều hơn nữa</div>
+                                <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                            </div>
+                            <div class="row__item hover">
+                                <img src="./assets/img/main__row--ava5.jpg" class="row__item--avatar"></img>
+                                <div class="row__item--info">Tuyển tập nhạc mới hằng tuần. Thưởng thức ca khúc mới và ít người nghe dành cho bạn. Cập nhật mỗi thứ Hai.</div>
+                              <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                            </div>
+                            <div class="row__item hover">
+                                <img src="./assets/img/main__row--ava2.jpg" class="row__item--avatar"></img>
+                                <div class="row__item--info">Tuyển tập nhạc mới hằng tuần. Thưởng thức ca khúc mới và ít người nghe dành cho bạn. Cập nhật mỗi thứ Hai.</div>
+                              <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                            </div>
+                            <div class="row__item hover">
+                                <img src="./assets/img/listmusic__item4.jpg" class="row__item--avatar"></img>
+                                <div class="row__item--info">Chị Đẹp Đạp Gió Rẽ Sóng, ANH TRAI "SAY HI", Vũ Cát Tường và nhiều hơn nữa</div>
+                                 <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                            </div>
+                            <div class="row__item hover">
+                                <img src="./assets/img/main__row--ava4.jpg" class="row__item--avatar"></img>
+                                <div class="row__item--info">Noo Phước Thịnh, Bích Phương, Charmy Pham và nhiều hơn nữa</div>
+                           <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                            </div>
+                            <div class="row__item hover">
+                                <img src="./assets/img/listmusic__item5.jpg" class="row__item--avatar"></img>
+                                <div class="row__item--info">Tuyển tập nhạc mới hằng tuần. Thưởng thức ca khúc mới và ít người nghe dành cho bạn. Cập nhật mỗi thứ Hai.</div>
+                           <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                            </div>
+                            <div class="row__item hover">
+                                <img src="./assets/img/main__row--ava3.jpg" class="row__item--avatar"></img>
+                                <div class="row__item--info">Chị Đẹp Đạp Gió Rẽ Sóng, ANH TRAI "SAY HI", Vũ Cát Tường và nhiều hơn nữa</div>
+                            <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                            </div>
+                            <div class="row__item hover">
+                                <img src="./assets/img/listmusic__item4.jpg" class="row__item--avatar"></img>
+                                <div class="row__item--info">Noo Phước Thịnh, Bích Phương, Charmy Pham và nhiều hơn nữa</div>
+                                <i class="fa-solid fa-play play" style="color: #000000;"></i>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+                   
+                <div class="content__info">
+                    <div class="info__top">
+                        <div class="top__title">Hoàng Dũng</div>
+                        <div class="top__right">
+
+                            <i class="fa-solid fa-ellipsis" style="color: #f7f7f7;"></i>
+                            <i class="fa-solid fa-xmark" style="color: #fafafa;"></i>
+                        </div>
+                    </div>
+                    <img src="./assets/img/info-content.jpg" alt="" class="info__ava hover">
+                    <div class="info__content">
+                        <div>
+                            <div class="info__name">Chờ Anh Nhé</div>
+                            <div class="info__singer">Hoàng Dũng, Hoàng Rob</div>
+                        </div>
+                        <i class="fa-solid fa-plus plus" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="singer hover">
+                        <img src="./assets/img/listmusic__item2.jpg" alt="" class="singer__ava">
+                        <div class="info__title">Hoàng Dũng</div>
+                        <div class="singer__rows">
+                            <div class="singer__number">1.007.848
+                                Người nghe Hàng tháng</div>
+                            <a href="" class="singer__follow--btn">Theo dõi</a>
+                        </div>
+                        <div class="singer__desc">Hoàng Dũng là ca sỹ bước ra từ cuộc thi The Voice - Giọng hát Việt 2015. Các EP “Tình Ca Mùa Thu”, “Tình Ca Hoàng Dũng”, “Yên” và album “25” cùng nhiều single được khán giả yêu mến như “Nàng Thơ”, “Yếu Đuối”, “Đoạn Kết Mới”,… đã ghi lại hành trình âm nhạc gần một thập kỷ của Hoàng Dũng với những thành công nhất định. Dòng nhạc chính mà Hoàng Dũng theo đuổi là pop và được khán giả yêu mến đón nhận nhờ cách thể hiện riêng trong giai điệu, ca từ và giọng hát. Âm nhạc của Hoàng Dũng không hoa mỹ mà gần gũi, khiêm nhường, được nhào nặn chỉn chu với mục tiêu có thể chạm tới trái tim của khán giả qua những cảm xúc chân thành. 2 năm sau dự án “Yên” gồm 1 EP và 2 đêm concert tại TP Hồ Chí Minh và Hà Nội, Hoàng Dũng trở lại với hình ảnh mới và những thử nghiệm mới trong âm nhạc, mở đầu bằng single “La Bàn” phát hành ngày 23.10.2024.</div>
+                    </div>
+                    <div class="people__list">
+                        <div class="member__top">
+                            <div class="member__title info__title">Người tham gia</div>
+                            <div class="member__act hover">Hiện tất cả</div>
+                        </div>
+                        <div class="people__item">
+                            <div>
+
+                                <div class="people__name">Hoàng Dũng</div>
+                                <div class="people__desc">Nghệ sĩ chính</div>
+                            </div>
+                            <div class="singer__follow--btn">Theo dõi</div>
+                        </div>
+                        <div class="people__item">
+                            <div>
+
+                                <div class="people__name">Hoàng Rob</div>
+                                <div class="people__desc">Nghệ sĩ tham gia</div>
+                            </div>
+                            <div class="singer__follow--btn">Theo dõi</div>
+                        </div>
+                        <div class="people__item">
+                            <div>
+
+                                <div class="people__name">Nguyễn Hoàng Dũng</div>
+                                <div class="people__desc">Nhà soạn nhạc, Người viết lời</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nextsong">
+                        <div class="member__top">
+                            <div class="member__title info__title">Tiếp theo trong danh sách chờ</div>
+                            <div class="member__act hover">Hiện tất cả</div>
+                        </div>
+                        <div class="nextsong__item">
+                            <img src="./assets/img/listmusic__item4.jpg" alt="" class="nextsong__img">
+                            <div class="nextsong__info">
+                                <div class="nextsong__name">Đứa nào làm em buồn?</div>
+                                <div class="nextsong__singer">Hoàng Dũng,Phúc Du</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
