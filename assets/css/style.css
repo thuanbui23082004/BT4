@@ -333,7 +333,11 @@ i:hover {
 
 /* -----main-content------ */
 .content__main {
-    background: linear-gradient(0deg, #1d1d1d 73%, rgba(140, 42, 2, 1) 100%);
+    background: linear-gradient(
+        0deg,
+        #1d1d1d calc(100vh - 350px),
+        rgba(140, 42, 2, 1) calc(100vh - 64px)
+    );
     border-radius: 8px;
     overflow: scroll;
     height: calc(100vh - 72px);
@@ -344,7 +348,7 @@ i:hover {
     display: flex;
     gap: 10px;
     height: 64px;
-    background-color: #6b270e;
+    background-color: #70270d;
     align-items: center;
     padding-inline: 40px;
     z-index: 3;
